@@ -18,11 +18,14 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: PowerShell@2
+- task: PowerShellOnTargetMachines@3
   inputs:
-    targetType: 'inline'
-    script: |
-      # Write your PowerShell commands here.
+    Machines: '192.168.100.94:3389'
+    UserName: 'GETECSA'
+    UserPassword: 'GTE-2023*'
+    InlineScript: |
+      # Write your powershell commands here.
       
       .\tosca_execution_client.ps1 -toscaServerUrl "http://localhost:80" -projectName "PowerShell_Test" -events '["PowerShellTest"]'
-    pwsh: true
+      pwsh: true
+    CommunicationProtocol: 'Http'
