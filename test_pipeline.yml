@@ -28,4 +28,4 @@ steps:
       
       .\tosca_execution_client.ps1 -toscaServerUrl "http://localhost:80" -projectName "PowerShell_Test" -events '["PowerShellTest"]'
       pwsh: true
-    CommunicationProtocol: 'Http'
+    CommunicationProtocol: 'Https'
