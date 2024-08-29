@@ -21,7 +21,7 @@ steps:
 - task: PowerShellOnTargetMachines@3
   inputs:
     Machines: '192.168.100.94:3389'
-    UserName: 'GETECSA'
+    UserName: 'MAURIZIO-HILERI/GETECSA'
     UserPassword: 'GTE-2023*'
     InlineScript: |
       # Write your powershell commands here.
