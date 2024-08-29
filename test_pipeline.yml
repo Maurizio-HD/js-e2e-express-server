@@ -20,7 +20,7 @@ steps:
 
 - task: PowerShellOnTargetMachines@3
   inputs:
-    Machines: '192.168.100.94:49172'
+    Machines: '192.168.100.94:5985'
     UserName: 'MAURIZIO-HILERI/GETECSA'
     UserPassword: 'GTE-2023*'
     InlineScript: |
