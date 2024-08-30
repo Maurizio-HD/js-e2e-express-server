@@ -21,12 +21,10 @@ steps:
 - task: PowerShellOnTargetMachines@3
   inputs:
     Machines: '192.168.100.94:5985'
-    UserName: 'MAURIZIO-HILERI/GETECSA'
+    UserName: 'GETECSA'
     UserPassword: 'GTE-2023*'
     InlineScript: |
       # Write your powershell commands here.
-      
       .\tosca_execution_client.ps1 -toscaServerUrl "http://localhost:80" -projectName "PowerShell_Test" -events '["PowerShellTest"]'
       pwsh: true
     CommunicationProtocol: 'Http'
-
