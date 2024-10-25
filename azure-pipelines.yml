@@ -15,5 +15,4 @@ steps:
       # Write your powershell commands here.
       cd C:\Execution\ToscaExecutionClient\
       .\tosca_execution_client.ps1 -toscaServerUrl "http://localhost:80" -projectName "MultiUser_Workspace" -events '["TestEvent test"]'
-      Write-Output "Hello World"
     CommunicationProtocol: 'Http'
