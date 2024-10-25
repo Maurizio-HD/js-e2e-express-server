@@ -10,7 +10,7 @@ steps:
 
 - task: PowerShellOnTargetMachines@3
   inputs:
-    Machines: '52.55.115.13:5985'
+    Machines: '172.31.92.95:5985'
     UserName: 'EC2AMAZ-JBN5EJN\Administrator'
     UserPassword: ';r8HEqY-&inT55c*9tScRK=Tmv6avb!U'
     InlineScript: |
