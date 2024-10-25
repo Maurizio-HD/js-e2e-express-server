@@ -15,7 +15,7 @@ steps:
     UserPassword: ';r8HEqY-&inT55c*9tScRK=Tmv6avb!U'
     InlineScript: |
       # Write your powershell commands here.
-      
       cd C:\Execution\ToscaExecutionClient\
       .\tosca_execution_client.ps1 -toscaServerUrl "http://localhost:80" -projectName "MultiUser_Workspace" -events '["TestEvent test"]'
-    CommunicationProtocol: 'Http'    
+    CommunicationProtocol: 'Http'
+
