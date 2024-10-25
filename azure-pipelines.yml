@@ -1,3 +1,13 @@
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
 - task: PowerShellOnTargetMachines@3
   inputs:
     Machines: '172.31.92.95:5985'
